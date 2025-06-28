@@ -1,13 +1,13 @@
 use bevy::ecs::system::SystemParam;
 use bevy::math::{Vec2, Vec3};
-use bevy::prelude::{Camera, Entity, GlobalTransform, InfinitePlane3d, Query};
+use bevy::prelude::{Camera, Entity, GlobalTransform, InfinitePlane3d, Query, Reflect};
 use bevy::render::camera::RenderTarget;
 use bevy::render::view::RenderLayers;
 use bevy::window::WindowRef;
 
 pub type CameraQuery<'w> = (&'w Camera, &'w GlobalTransform, &'w RenderLayers);
 
-#[derive(SystemParam)]
+#[derive(SystemParam, Reflect)]
 pub struct Cameras<'w, 's> {
     pub cameras: Query<'w, 's, CameraQuery<'static>>,
 }
