@@ -7,7 +7,6 @@ mod system_set;
 pub mod vrm;
 pub mod vrma;
 
-#[doc(hidden)]
 pub mod prelude {
     pub use crate::{
         error::AppResult, system_param::prelude::*, system_set::VrmSystemSets, vrm::prelude::*,
