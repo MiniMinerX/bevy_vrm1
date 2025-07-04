@@ -11,6 +11,7 @@
 ### Bug Fixes
 
 - Fixed collision detection for the SpringBone sphere collider.
+- Fixed logic to determine redraw
 
 ## v0.2.2
 
