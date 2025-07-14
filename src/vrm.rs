@@ -1,4 +1,4 @@
-pub mod expressions;
+pub(crate) mod expressions;
 pub(crate) mod gltf;
 pub(crate) mod humanoid_bone;
 mod initialize;
@@ -30,6 +30,7 @@ pub mod prelude {
         loader::{VrmAsset, VrmHandle},
         look_at::LookAt,
         mtoon::prelude::*,
+        expressions::VrmExpressionRegistry,
     };
 }
 
