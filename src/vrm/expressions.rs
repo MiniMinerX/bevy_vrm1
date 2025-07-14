@@ -34,7 +34,7 @@ pub(crate) struct BindExpressionNode {
 pub(crate) struct RetargetExpressionNodes(pub(crate) Vec<BindExpressionNode>);
 
 #[derive(Component, Deref, Reflect)]
-pub(crate) struct VrmExpressionRegistry(pub(crate) HashMap<VrmExpression, Vec<ExpressionNode>>);
+pub struct VrmExpressionRegistry(pub(crate) HashMap<VrmExpression, Vec<ExpressionNode>>);
 
 impl VrmExpressionRegistry {
     pub fn new(
