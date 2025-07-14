@@ -11,7 +11,7 @@ use bevy::platform::collections::HashMap;
 use bevy::prelude::*;
 
 #[derive(Reflect, Debug, Clone)]
-pub(crate) struct ExpressionNode {
+pub struct ExpressionNode {
     pub name: Name,
     pub morph_target_index: usize,
 }
