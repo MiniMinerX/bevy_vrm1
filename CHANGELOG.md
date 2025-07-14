@@ -7,6 +7,9 @@
 - added `log` feature flag to enable logging.
     - Error logs are now not output by default.
 - The update timing for SpringBone and LookAt has been changed to `PostUpdate`.
+- Rust edition has been changed to 2024.
+- Renamed some of the methods defined on SystemParams in this crate.
+    - Doesn't affect most users
 
 ### Bug Fixes
 
