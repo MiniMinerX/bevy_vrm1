@@ -1,4 +1,4 @@
-pub(crate) mod expressions;
+pub mod expressions;
 pub(crate) mod gltf;
 pub(crate) mod humanoid_bone;
 mod initialize;
