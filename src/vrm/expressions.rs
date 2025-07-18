@@ -13,6 +13,7 @@ use bevy::prelude::*;
 #[derive(Reflect, Debug, Clone)]
 pub struct ExpressionNode {
     pub name: Name,
+    pub entity: Entity,
     pub morph_target_index: usize,
 }
 
