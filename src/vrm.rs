@@ -30,7 +30,7 @@ pub mod prelude {
         loader::{VrmAsset, VrmHandle},
         look_at::LookAt,
         mtoon::prelude::*,
-        expressions::VrmExpressionRegistry,
+        expressions::{VrmExpressionRegistry, RetargetExpressionNodes},
     };
 }
 

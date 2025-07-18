@@ -22,7 +22,7 @@ pub(crate) struct RequestInitializeExpressions;
 #[derive(Reflect)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 #[cfg_attr(feature = "serde", reflect(Serialize, Deserialize))]
-pub(crate) struct BindExpressionNode {
+pub struct BindExpressionNode {
     pub expression_entity: Entity,
     pub index: usize,
 }
@@ -31,7 +31,7 @@ pub(crate) struct BindExpressionNode {
 #[reflect(Component)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 #[cfg_attr(feature = "serde", reflect(Serialize, Deserialize))]
-pub(crate) struct RetargetExpressionNodes(pub(crate) Vec<BindExpressionNode>);
+pub struct RetargetExpressionNodes(pub Vec<BindExpressionNode>);
 
 #[derive(Component, Deref, Reflect)]
 pub struct VrmExpressionRegistry(pub HashMap<VrmExpression, Vec<ExpressionNode>>);
