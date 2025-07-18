@@ -13,7 +13,6 @@ use bevy::prelude::*;
 #[derive(Reflect, Debug, Clone)]
 pub struct ExpressionNode {
     pub name: Name,
-    pub entity: Entity,
     pub morph_target_index: usize,
 }
 
@@ -153,6 +152,7 @@ mod tests {
     fn test_obtain_expression_nodes() -> TestResult {
         let mut app = test_app();
         app.add_plugins(VrmExpressionPlugin);
+
 
         let vrm_entity = app
             .world_mut()
