@@ -1,4 +1,3 @@
-#![feature(let_chains)]
 
 use crate::prelude::ChildSearcher;
 use bevy::ecs::system::SystemParam;
