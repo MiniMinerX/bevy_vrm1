@@ -1,3 +1,5 @@
+#![feature(let_chains)]
+
 use crate::prelude::ChildSearcher;
 use bevy::ecs::system::SystemParam;
 use bevy::prelude::{AnimationPlayer, Children, Entity, Query, Reflect};
