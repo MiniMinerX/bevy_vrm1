@@ -1,5 +1,4 @@
 #![allow(clippy::type_complexity, clippy::too_many_arguments)]
-#![feature(let_chains)]
 
 
 mod error;
